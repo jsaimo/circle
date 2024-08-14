@@ -1,0 +1,6 @@
+var lines = app.activeDocument.selection;
+var increment = 7.2;
+for (var i = 0; i < lines.length; i++) {
+    var angle = i * increment;
+    lines[i].rotate(angle, true, true, true, true, Transformation.CENTER);
+}
